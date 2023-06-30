@@ -22,6 +22,7 @@ cek=$(netstat -nutlp | grep -w $tr2)
 if [[ -z $cek ]]; then
 
 sed -i "s/$trgo/$tr2/g" /usr/local/etc/xray/trgo.json
+rm -rf /usr/local/etc/xray/port/port-trgo
 echo "$tr2" >> /usr/local/etc/xray/port/port-trgo
 
 iptables -D INPUT -m state --state NEW -m tcp -p tcp --dport $trgo -j ACCEPT
