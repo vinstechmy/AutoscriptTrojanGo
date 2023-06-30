@@ -13,7 +13,7 @@ clear
 rm -rf /etc/.maA*
 rm -rf /etc/token_bott
 rm -rf /etc/admin_id
-wget -O /usr/bin/botautobckp "https://cdn.discordapp.com/attachments/1071437252179263528/1071437304096370741/botautobckp.sh" && chmod +x /usr/bin/botautobckp
+wget -O /usr/bin/botautobckp "https://raw.githubusercontent.com/vinstechmy/AutoscriptTrojanGo/main/BACKUP/botautobckp.sh" && chmod +x /usr/bin/botautobckp
 clear
 firtsTimeRun() {
 
