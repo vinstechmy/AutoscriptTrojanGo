@@ -51,9 +51,9 @@ status="$(systemctl show trojan-go.service --no-page)"
 status_text=$(echo "${status}" | grep 'ActiveState=' | cut -f2 -d=)
 if [ "${status_text}" == "active" ]
 then
-echo -e " XRAY Trojan GO Core Service   : "$green"Running"$NC""
+echo -e " XRAY Trojan GO Core Service    : "$green"Running"$NC""
 else
-echo -e " XRAY Trojan GO Core Service   : "$red"Not Running (Error)"$NC""
+echo -e " XRAY Trojan GO Core Service    : "$red"Not Running (Error)"$NC""
 fi
 
 echo ""
