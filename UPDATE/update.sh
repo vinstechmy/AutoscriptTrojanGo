@@ -19,10 +19,6 @@ rm backupmenu
 wget -O get-backres "${Git_Profile}/OTHERS/get-backres.sh" && chmod +x /usr/bin/get-backres
 wget -O backupmenu "${Git_Profile}/MENU/backupmenu.sh" && chmod +x /usr/bin/backupmenu
 cd
-cd /etc/nginx/conf.d
-rm xray.conf
-wget -O xray.conf "https://raw.githubusercontent.com/vinstechmy/AutoscriptTrojanGo/main/OTHERS/xray.conf" && chmod +x xray.conf
-cd
 sleep 1
 clear
 echo -e "[${green}INFO${NC}] Successfully Install New Update File !"
